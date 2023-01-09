@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    height: fit-content;
+    width: fit-content;
+    display: inline-grid;
+}
+
+.square {
+    display: inline-block;
+    height: clamp(5px, 2vw, 20px);
+    width: clamp(5px, 2vw, 20px);
+    transition: all ease-in-out 0.2s;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.black {
+    transition: all ease-in-out 0.2s;
+    background-color: black;
+}
+
+button {
+    margin: 5px auto;
+    width: 200px;
+}
