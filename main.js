@@ -25,37 +25,3 @@ button.addEventListener('click', () => {
     squares.forEach(square => square.classList.toggle('border'))
     labels.forEach(square => square.classList.toggle('opacity'))
 })
-
-
-// EVIL VERSION: WHEN THE CLOCKS RUNS DOWN ALL SQUARES ARE RESET 
-
-// // Set the countdown duration in seconds
-// var countdownDuration = 60*59;
-
-// // Update the countdown every 1 second
-// var interval = setInterval(function () {
-//     // Calculate the minutes and seconds left
-//     var minutes = Math.floor(countdownDuration / 60);
-//     var seconds = countdownDuration % 60;
-
-//     // Format the minutes and seconds
-//     if (minutes < 10) {
-//         minutes = "0" + minutes;
-//     }
-//     if (seconds < 10) {
-//         seconds = "0" + seconds;
-//     }
-
-//     // Display the result in an element with id="countdown"
-//     document.getElementById("countdown").innerHTML = minutes + ":" + seconds;
-
-//     // If the countdown is finished, clear the interval and display a message
-//     if (countdownDuration <= 0) {
-//         clearInterval(interval);
-//         document.getElementById("countdown").innerHTML = "Sorry Mate";
-//         squares.forEach(square => square.classList.remove('black'))
-//     }
-
-//     // Decrement the countdown duration by 1 second
-//     countdownDuration--;
-// }, 1000);
