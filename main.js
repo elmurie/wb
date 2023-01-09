@@ -1,10 +1,10 @@
 function createGrid() {
     const gridElement = document.querySelector('.grid');
-    for (let i = 0; i < 37; i++) {
+    for (let i = 0; i < 33; i++) {
         let rowElement = document.createElement('div');
         rowElement.classList.add('row');
         gridElement.appendChild(rowElement)
-        for (let j = 0; j < 37; j++) {
+        for (let j = 0; j < 33; j++) {
             let squareElement = document.createElement('span');
             squareElement.classList.add('square');
             squareElement.classList.add('border');
